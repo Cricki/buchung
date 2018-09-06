@@ -1,325 +1,385 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>The Materialize Example</title>
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
-      <link rel = "stylesheet"
-         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-      <link rel ="stylesheet"
-        href="css/style.css">
-            
-   </head>
-   
-   <body class = "container"> 
 
-    <h3 id="white-text">Buchungssätze</h3>
-    <hr>
-    <div class="row">
-      <div class="col s12">
-        <ul class="white-text">
-          <li>Soll 200 an Haben 200</li>
-        </ul>
-      </div>
+<head>
+  <title>The Materialize Example</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="container">
+
+  <h3 id="white-text">Buchungssätze</h3>
+  <hr>
+  <div class="row">
+    <div class="col s12">
+      <ul class="white-text" id="buchungsSatz">
+        <li>Soll 200 an Haben 200</li>
+      </ul>
     </div>
-      <!-- Tables -->
-      <h3 id ="white-text">T-Konten</h3>
-   <hr>
-      <table id="bilanz-table" class = "striped bordered">
-        <!-- Main Table  Head BEGIN-->
+  </div>
+  <!-- Tables -->
+  <h3 id="white-text">T-Konten</h3>
+  <hr>
+  <table id="bilanz-table" class="striped bordered">
+    <!-- Main Table  Head BEGIN-->
 
-         <thead>
-            <tr>
-               <th class="center-align">Aktiva</th>
-               <th class="center-align">Passiva</th>
-            </tr>
-         </thead>
+    <thead>
+      <tr>
+        <th class="center-align">Aktiva</th>
+        <th class="center-align">Passiva</th>
+      </tr>
+    </thead>
 
-         <!-- Main Table Head END -->
+    <!-- Main Table Head END -->
 
-         <!-- Main Table HERE -->
-         <tbody>
-            <tr>
-               <td> 
-                 <table>
-                   <thead>
-                     <h6 class ="center-align">Furhpark</h6>
-                     <tr>
-                       <th class="center-align">Soll</th>
-                       <th class="center-align">Haben</th>
-                     </tr>
-                   </thead>
-                  
-                   <tbody>
-                     <tr>
-                       <td>
-                         <ul class="center-align">
-                           <li>ho</li>
-                           <li>shi</li>
-                         </ul>
-                       </td>
-                       <td>
-                         <ul class="center-align">
-                           <li>hi</li>
-                         </ul>
-                       </td>
-                     </tr>
-                   </tbody>
-                 </table>
-               </td>
-               <!-- PASSIVA SIDE -->
-               <td> 
-                <table class="middle-border">
-                  <thead>
-                    <h6 class ="center-align">EK</h6>
-                    <tr>
-                      <th class="center-align">Soll</th>
-                      <th class="center-align">Haben</th>
-                    </tr>
-                  </thead>
-                 
-                  <tbody>
-                    <tr>
-                      <td>
-                        <ul class="center-align">
-                          <li>ho</li>
-                          <li>shi</li>
-                        </ul>
-                      </td>
-                      <td>
-                        <ul class="center-align">
-                          <li>hi</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
+    <!-- Main Table HERE -->
+    <tbody>
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Furhpark</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
 
-            <tr>
-                <td> 
-                    <table>
-                      <thead>
-                        <h6 class ="center-align">Rohstoffe</h6>
-                        <tr>
-                          <th class="center-align">Soll</th>
-                          <th class="center-align">Haben</th>
-                        </tr>
-                      </thead>
-                     
-                      <tbody>
-                        <tr>
-                          <td>
-                            <ul class="center-align">
-                              <li>ho</li>
-                              <li>shi</li>
-                            </ul>
-                          </td>
-                          <td>
-                            <ul class="center-align">
-                              <li>hi</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <!-- PASSIVA SIDE -->
-                  <td> 
-                   <table class="middle-border">
-                     <thead>
-                       <h6 class ="center-align">Verb. LuL</h6>
-                       <tr>
-                         <th class="center-align">Soll</th>
-                         <th class="center-align">Haben</th>
-                       </tr>
-                     </thead>
-                    
-                     <tbody>
-                       <tr>
-                         <td>
-                           <ul class="center-align">
-                             <li>ho</li>
-                             <li>shi</li>
-                           </ul>
-                         </td>
-                         <td>
-                           <ul class="center-align">
-                             <li>hi</li>
-                           </ul>
-                         </td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </td>
-            </tr>
-         
-            <tr>
-                <td> 
-                    <table>
-                      <thead>
-                        <h6 class ="center-align">Forderungen</h6>
-                        <tr>
-                          <th class="center-align">Soll</th>
-                          <th class="center-align">Haben</th>
-                        </tr>
-                      </thead>
-                     
-                      <tbody>
-                        <tr>
-                          <td>
-                            <ul class="center-align">
-                              <li>ho</li>
-                              <li>shi</li>
-                            </ul>
-                          </td>
-                          <td>
-                            <ul class="center-align">
-                              <li>hi</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <!-- PASSIVA SIDE -->
-                  <td> 
-                   <table class="middle-border">
-                     <thead>
-                       <h6 class ="center-align">Umsatzsteuer</h6>
-                       <tr>
-                         <th class="center-align">Soll</th>
-                         <th class="center-align">Haben</th>
-                       </tr>
-                     </thead>
-                    
-                     <tbody>
-                       <tr>
-                         <td>
-                           <ul class="center-align">
-                             <li>ho</li>
-                             <li>shi</li>
-                           </ul>
-                         </td>
-                         <td>
-                           <ul class="center-align">
-                             <li>hi</li>
-                           </ul>
-                         </td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align" id="Fuhrpark-soll">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align" id="Fuhrpark-haben">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <!-- PASSIVA SIDE -->
+        <td>
+          <table class="middle-border">
+            <thead>
+              <h6 class="center-align">Eigenkapital</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
 
-            <tr>
-                <td> 
-                    <table>
-                      <thead>
-                        <h6 class ="center-align">Bank</h6>
-                        <tr>
-                          <th class="center-align">Soll</th>
-                          <th class="center-align">Haben</th>
-                        </tr>
-                      </thead>
-                     
-                      <tbody>
-                        <tr>
-                          <td>
-                            <ul class="center-align">
-                              <li>ho</li>
-                              <li>shi</li>
-                            </ul>
-                          </td>
-                          <td>
-                            <ul class="center-align">
-                              <li>hi</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <!-- PASSIVA SIDE -->
-                  <td> 
-                   <table class="middle-border">
-                     <thead>
-                       <h6 class ="center-align">GuV</h6>
-                       <tr>
-                         <th class="center-align">Soll</th>
-                         <th class="center-align">Haben</th>
-                       </tr>
-                     </thead>
-                    
-                     <tbody>
-                       <tr>
-                         <td>
-                           <ul class="center-align">
-                             <li>ho</li>
-                             <li>shi</li>
-                           </ul>
-                         </td>
-                         <td>
-                           <ul class="center-align">
-                             <li>hi</li>
-                           </ul>
-                         </td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Rohstoffe</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
 
-            <tr>
-                <td> 
-                    <table>
-                      <thead>
-                        <h6 class ="center-align">Kasse</h6>
-                        <tr>
-                          <th class="center-align">Soll</th>
-                          <th class="center-align">Haben</th>
-                        </tr>
-                      </thead>
-                     
-                      <tbody>
-                        <tr>
-                          <td>
-                            <ul class="center-align">
-                              <li>ho</li>
-                              <li>shi</li>
-                            </ul>
-                          </td>
-                          <td>
-                            <ul class="center-align">
-                              <li>hi</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <!-- PASSIVA SIDE -->
-                  <td> 
-                   </table>
-                 </td>
-            </tr>
-            
-         </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <!-- PASSIVA SIDE -->
+        <td>
+          <table class="middle-border">
+            <thead>
+              <h6 class="center-align">Verb. LuL</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Forderungen</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <!-- PASSIVA SIDE -->
+        <td>
+          <table class="middle-border">
+            <thead>
+              <h6 class="center-align">Umsatzsteuer</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Bank</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <!-- PASSIVA SIDE -->
+        <td>
+          <table class="middle-border">
+            <thead>
+              <h6 class="center-align">GuV</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Kasse</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align">
+                    <li>ho</li>
+                    <li>shi</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align">
+                    <li>hi</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <!-- PASSIVA SIDE -->
+        <td>
+  </table>
+  </td>
+  </tr>
+
+  <!-- ACTIVA SIDE -->
+  <!-- <tr>
+    <td>
+      <table>
+        <thead>
+          <h6 class="center-align">Kasse</h6>
+          <tr>
+            <th class="center-align">Soll</th>
+            <th class="center-align">Haben</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <ul class="center-align">
+                <li>ho</li>
+                <li>shi</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="center-align">
+                <li>hi</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
       </table>
+    </td> -->
+    <!-- PASSIVA SIDE -->
+    <!-- <td>
+      <table class="middle-border">
+        <thead>
+          <h6 class="center-align">Kasse</h6>
+          <tr>
+            <th class="center-align">Soll</th>
+            <th class="center-align">Haben</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <ul class="center-align">
+                <li>ho</li>
+                <li>shi</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="center-align">
+                <li>hi</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td> -->
+  </tr>
+  </tbody>
+  </table>
 
 
-      <!-- Floating editing button triggering modal -->
-      <div class="fixed-action-btn">
-        <a  onclick="document.getElementById('modal1').style.display='block'" class="btn-floating btn-large btn purple waves-effect waves-light modal-trigger" href="#modal1">
-          <i class="large material-icons">mode_edit</i>
-        </a>
-      </div>
-        <div id="modal1" class="modal">
-          <a onclick="document.getElementById('modal1').style.display='none'" class="btn-floating-cancel btn-small waves-effect waves-light"><i class="material-icons">cancel</i></a>
-          <div class="modal-content">
-            <div class="row">
-              <!-- <div class="col s6">
+  <!-- Floating editing button triggering modal -->
+  <div class="fixed-action-btn">
+    <a onclick="document.getElementById('modal1').style.display='block'" class="btn-floating btn-large btn purple waves-effect waves-light modal-trigger"
+      href="#modal1">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+  </div>
+  <div id="modal1" class="modal">
+    <a onclick="document.getElementById('modal1').style.display='none'" class="btn-floating-cancel btn-small waves-effect waves-light"><i
+        class="material-icons">cancel</i></a>
+    <div class="modal-content">
+      <div class="row">
+        <!-- <div class="col s6">
                   <ul class="center-align">
                       <li class=""><h5>Aktiva</h5></li>
                       <li class="">
@@ -339,87 +399,93 @@
                       </li>
                     </ul>
               </div> -->
-              <div class="input-field col s6">
-                  <select>
-                    <optgroup label="Aktiva">
-                      <option value="1">Furhpark</option>
-                      <option value="2">Rohstoffe</option>
-                      <option value="3">Forderungen</option>
-                      <option value="4">Bank</option>
-                      <option value="5">Kasse</option>
-                    </optgroup>
-                    <optgroup label="Passiva">
-                        <option value="1">Eigenkapital</option>
-                        <option value="2">Verb.LuL</option>
-                        <option value="3">Umsatzsteuer</option>
-                      </optgroup>
-                  </select>
-                  <label>Select Soll Account</label>
-                </div>
+        <!-- selected="selected" -->
+        <form action="" id="myForm">
+          <div class="input-field col s6">
+            <select id="soll-select" name="soll-select" onchange="getSelectValue(this)">
+              <optgroup label="Aktiva">
+                <option value=""></option>
+                <option value="Fuhrpark">Furhpark</option>
+                <option value="Rohstoffe">Rohstoffe</option>
+                <option value="Forderungen">Forderungen</option>
+                <option value="Bank">Bank</option>
+                <option value="Kasse">Kasse</option>
+                <option value="Vorsteuer">Vorsteuer</option>
+              </optgroup>
+              <optgroup label="Passiva">
+                <option value="Eigenkapital">Eigenkapital</option>
+                <option value="Verb.">Verb.LuL</option>
+                <option value="Umsatzsteuer">Umsatzsteuer</option>
+              </optgroup>
+            </select>
+            <label>Select Soll Account</label>
+          </div>
 
-                <div class="input-field col s6">
-                    <select>
-                        <optgroup label="Aktiva">
-                            <option value="1">Furhpark</option>
-                            <option value="2">Rohstoffe</option>
-                            <option value="3">Forderungen</option>
-                            <option value="4">Bank</option>
-                            <option value="5">Kasse</option>
-                          </optgroup>
-                          <optgroup label="Passiva">
-                              <option value="1">Eigenkapital</option>
-                              <option value="2">Verb.LuL</option>
-                              <option value="3">Umsatzsteuer</option>
-                            </optgroup>
-                    </select>
-                    <label>Select Haben Account</label>
-                  </div>
-        
-                  <!-- Switch -->
-                  <div class="col s6">
-                    <div class="switch">
-                        <label>
-                          Off
-                          <input type="checkbox">
-                          <span class="lever"></span>
-                          Brutto
-                        </label>
-                     </div>
-                     <div class="switch">
-                          <label>
-                            Off
-                            <input type="checkbox">
-                            <span class="lever"></span>
-                            Netto
-                          </label>
-                     </div>
-                  </div>
+          <div class="input-field col s6">
+            <select id="haben-select" name="haben-select" onchange="getSelectValue(this)">
+              <optgroup label="Aktiva">
+                <option value=""></option>
+                <option value="Fuhrpark">Furhpark</option>
+                <option value="Rohstoffe">Rohstoffe</option>
+                <option value="Forderungen">Forderungen</option>
+                <option value="Bank">Bank</option>
+                <option value="Kasse">Kasse</option>
+                <option value="Vorsteuer">Vorsteuer</option>
+              </optgroup>
+              <optgroup label="Passiva">
+                <option value="Eigenkapital">Eigenkapital</option>
+                <option value="Verb.">Verb.LuL</option>
+                <option value="Umsatzsteuer">Umsatzsteuer</option>
+              </optgroup>
+            </select>
+            <label>Select Haben Account</label>
+          </div>
 
-                  <div class="input-field col s6">
-                      <select>
-                  <optgroup label="GuV-Soll">
-                      <option value="1">Lohnaufwand</option>
-                      <option value="2">Mietaufwand</option>
-                      <option value="3">Energieaufwand</option>
-                    </optgroup>
-                    <optgroup label="GuV-Haben">
-                        <option value="1">Umsatzerlös</option>
-                    </optgroup>
-                  </select>
-                  <label>GuV Konten</label>
-                </div>
+          <!-- Switch -->
+          <div class="col s6">
+            <div class="switch">
+              <label onchange="toggleBrutto()">
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                Brutto
+              </label>
+            </div>
+            <div class="switch">
+              <label onchange="toggleNetto()">
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                Netto
+              </label>
+            </div>
+          </div>
 
-                  <div class="col s12">
-                      
-                      Welcher Betrag:
-                        <div class="input-field inline">
-                          <input id="email_inline" type="email" class="validate">
-                          <label for="email_inline">Betrag</label>
-                          <span class="helper-text" data-error="wrong" data-success="right">e.g. 200</span>
-                        </div>
-                       
-                  </div>
-              <!-- <div class="col s6">
+          <div class="input-field col s6">
+            <select onchange="getSelectValue(this)">
+              <optgroup label="GuV-Soll">
+                <option value="Lohnaufwand">Lohnaufwand</option>
+                <option value="Mietaufwand">Mietaufwand</option>
+                <option value="Energieaufwand">Energieaufwand</option>
+              </optgroup>
+              <optgroup label="GuV-Haben">
+                <option value="Umsatzerlös">Umsatzerlös</option>
+              </optgroup>
+            </select>
+            <label>GuV Konten</label>
+          </div>
+
+          <div class="col s12">
+
+            Welcher Betrag:
+            <div class="input-field inline" id="betrag-input">
+              <input id="betrag" type="number" class="validate" required onchange="getSelectValueNumber(this)">
+              <label for="betrag">Betrag</label>
+              <span class="helper-text" data-error="wrong" data-success="right">e.g. 200</span>
+            </div>
+
+          </div>
+          <!-- <div class="col s6">
                   <ul class="center-align">
                       <li class=""><h5>Passiva</h5></li>
                       <li class="">
@@ -445,25 +511,26 @@
                       </li>
                     </ul>
               </div> -->
-              <div class="col s12">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati animi eum consectetur.</p>
-              </div>
-            </div>
+          <div class="col s12">
+            <p name="satz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati animi eum consectetur.</p>
           </div>
-          <!-- <div class="modal-footer">
+          <button class="btn purple" type="submit" value="Submit" onclick="main()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="modal-footer">
             <a onclick="document.getElementById('modal1').style.display='none'" href="#!" class="modal-close waves-effect waves-red btn-flat">Agree</a>
           </div> -->
-        </div>
-
-                  
+  </div>
 
 
-      <!-- <script src="js/app.js"></script> -->
-      <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-      <script src="js/app.js"></script>
-   </body>
+
+
+  <!-- <script src="js/app.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+</body>
 </html>

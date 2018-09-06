@@ -1,0 +1,26 @@
+ToDO on 3.9.18
+
+    1. Get specific ul´s in the table, so we can append to child (li) (adding li´s)
+
+    2. Find a good solution to gather the Input Data and 
+
+    3. How to store that Data --> e.g in a list and then adding to frontend or directly adding
+
+    4. Maybe thinkin about a submit of the data if that help with JS???
+
+_________________________________________________________________________________________________________________
+ToDO on 3.9.18
+
+    1. Function in app.js were pretty useless or im too dumb :p
+
+    2. functionality of function directly in main() e.g. : 
+        let sollName = document.getElemntByID("soll-select").value.toString();
+        // oder so ähnlich 
+
+    3. nachschaun wie brutto nette nochmal safe verrechnet wird 
+
+    4. elemente in DOM erzeugen
+
+        4.1 Für Tabelle der ul einfach wenns get das value also den namen gleich machen also ul.id = "Fuhrpark"
+            -> dann kann man durch den input value name gleich richtige id in tabelle finden
+_________________________________________________________________________________________________________________
