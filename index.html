@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>The Materialize Example</title>
+  <title>Buchungssätze</title>
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -462,7 +462,7 @@
           </div>
 
           <div class="input-field col s6">
-            <select onchange="getSelectValue(this)">
+            <select disabled onchange="getSelectValue(this)">
               <optgroup label="GuV-Soll">
                 <option value="Lohnaufwand">Lohnaufwand</option>
                 <option value="Mietaufwand">Mietaufwand</option>
@@ -514,7 +514,7 @@
           <div class="col s12">
             <p name="satz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati animi eum consectetur.</p>
           </div>
-          <button class="btn purple" type="submit" value="Submit" onclick="main()">Submit</button>
+          <button class="btn purple" type="submit" value="Submit">Submit</button>
         </form>
       </div>
     </div>

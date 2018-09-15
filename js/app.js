@@ -26,7 +26,7 @@ function checkAccountType(elem){
     console.log("Passiva");
     return "Passiva";
   }
-  return; 
+  return "noType"; 
 }
 
 // FUNCTION TO GET A NUMBER 
