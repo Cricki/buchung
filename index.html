@@ -17,7 +17,6 @@
   <div class="row">
     <div class="col s12">
       <ul class="white-text" id="buchungsSatz">
-        <li>Soll 200 an Haben 200</li>
       </ul>
     </div>
   </div>
@@ -53,14 +52,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align" id="Fuhrpark-soll">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sFuhrpark">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align" id="Fuhrpark-haben">
-                    <li>hi</li>
+                  <ul class="center-align" id="hFuhrpark">
                   </ul>
                 </td>
               </tr>
@@ -81,14 +77,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sEigenkapital">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hEigenkapital">
                   </ul>
                 </td>
               </tr>
@@ -111,14 +104,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sRohstoffe">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hRohstoffe">
                   </ul>
                 </td>
               </tr>
@@ -139,14 +129,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sVerb.">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hVerb.">
                   </ul>
                 </td>
               </tr>
@@ -169,14 +156,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sForderungen">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hForderungen">
                   </ul>
                 </td>
               </tr>
@@ -197,14 +181,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sUmsatzsteuer">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hUmsatzsteuer">
                   </ul>
                 </td>
               </tr>
@@ -227,14 +208,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sBank">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hBank">
                   </ul>
                 </td>
               </tr>
@@ -255,14 +233,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sGuV">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hGuV">
                   </ul>
                 </td>
               </tr>
@@ -285,14 +260,11 @@
             <tbody>
               <tr>
                 <td>
-                  <ul class="center-align">
-                    <li>ho</li>
-                    <li>shi</li>
+                  <ul class="center-align" id="sKasse">
                   </ul>
                 </td>
                 <td>
-                  <ul class="center-align">
-                    <li>hi</li>
+                  <ul class="center-align" id="hKasse">
                   </ul>
                 </td>
               </tr>
@@ -402,7 +374,7 @@
         <!-- selected="selected" -->
         <form action="" id="myForm">
           <div class="input-field col s6">
-            <select id="soll-select" name="soll-select" onchange="getSelectValue(this)">
+            <select id="soll-select" name="soll-select">
               <optgroup label="Aktiva">
                 <option value=""></option>
                 <option value="Fuhrpark">Furhpark</option>
@@ -422,7 +394,7 @@
           </div>
 
           <div class="input-field col s6">
-            <select id="haben-select" name="haben-select" onchange="getSelectValue(this)">
+            <select id="haben-select" name="haben-select">
               <optgroup label="Aktiva">
                 <option value=""></option>
                 <option value="Fuhrpark">Furhpark</option>

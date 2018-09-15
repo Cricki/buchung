@@ -43,6 +43,12 @@ function getValues(e){
     const moneyVal = betr;
 
 
+    // Variables for inserting into T-Konto Table
+    let t_konto_soll;
+    let t_konto_haben;
+    t_konto_soll = "s"+sollName;
+    t_konto_haben = "h"+habenName;
+
     sollType = checkAccountType(sollName);
     habenType = checkAccountType(habenName);
     console.log(sollType);
@@ -50,7 +56,7 @@ function getValues(e){
 
 
 
-    
+//-------------------------------------------------------------------------
     // CREATING THE HTML LI WHICH IS THEN ADDED TO THE UL
     // create li element
     const li = document.createElement("li");
@@ -65,10 +71,24 @@ function getValues(e){
 
     // ADDING TO UL
     buchSatzList.appendChild(li);
+//-------------------------------------------------------------------------
 
+    // LI for Soll Account
+    const liSoll = document.createElement("li");
+    liSoll.appendChild(document.createTextNode(moneyVal.toString()));
+    document.getElementById(t_konto_soll).appendChild(liSoll);
+
+
+    // LI for Haben Account
+    const liHaben = document.createElement("li");
+    liHaben.appendChild(document.createTextNode(moneyVal.toString()));
+    document.getElementById(t_konto_haben).appendChild(liHaben);
+
+//-------------------------------------------------------------------------
     // console.log(brutto);
     // console.log(netto);
     e.preventDefault();
+   // $('.modal').modal(close());
 
 }
 
@@ -113,8 +133,8 @@ function toggleNetto(){
 function getSelectValueNumber(e){
   let value = parseFloat(e.value);
   console.log(value);
-  let v1 = typeof value;
-  console.log(v1);
+  //let v1 = typeof value;
+  //console.log(v1);
   betr = value;
   return value;
   // var id = e.id;
