@@ -1,0 +1,19 @@
+{
+  "name": "buchung",
+  "version": "1.0.0",
+  "description": "buchungssätze",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cricki/buchung.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cricki/buchung/issues"
+  },
+  "homepage": "https://github.com/Cricki/buchung#readme"
+}
