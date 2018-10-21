@@ -1,6 +1,8 @@
 html{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(165,40,179,1) 34%, rgba(155,50,184,1) 38%, rgba(148,58,187,1) 41%, rgba(135,71,193,1) 46%, rgba(128,79,196,1) 49%, rgba(98,110,210,1) 61%, rgba(0,212,255,1) 100%);
+    /*background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(165,40,179,1) 34%, rgba(155,50,184,1) 38%, rgba(148,58,187,1) 41%, rgba(135,71,193,1) 46%, rgba(128,79,196,1) 49%, rgba(98,110,210,1) 61%, rgba(0,212,255,1) 100%);
+*/
+background: grey;
 }
 
 /* div{

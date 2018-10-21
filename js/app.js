@@ -96,7 +96,7 @@ function main(){
   console.log(netto);
 
   // SET VARIABLES
-  //_____________________________________________________________________________________
+  
 
   // CHECK IF INPUTS ARE ACTIVA OR PASSIVA
 

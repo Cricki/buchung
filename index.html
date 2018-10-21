@@ -338,7 +338,131 @@
   </tbody>
   </table>
 
+  <h3 id="white-text">GuV-Konten</h3>
 
+  <table id="bilanz-table" class="striped bordered">
+    <!-- Main Table  Head BEGIN-->
+
+    <thead>
+      <tr>
+        <th class="center-align">Aktiva</th>
+        <th class="center-align">Passiva</th>
+      </tr>
+    </thead>
+
+    <!-- Main Table Head END -->
+
+    <!-- Main Table HERE -->
+    <tbody>
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Mietaufwand</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align" id="sMietaufwand">
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align" id="hMietaufwand">
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+
+        <!-- PASSIVA SIDE -->
+        <td>
+          <table class="middle-border">
+            <thead>
+              <h6 class="center-align">Umsatzerlöse</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align" id="sUmsatz">
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align" id="hUmsatz">
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Lohnaufwand</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align" id="sLohnaufwand">
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align" id="hLohnaufwand">
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+
+      <!-- ACTIVA SIDE -->
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <h6 class="center-align">Energieaufwand</h6>
+              <tr>
+                <th class="center-align">Soll</th>
+                <th class="center-align">Haben</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="center-align" id="sEnergieaufwand">
+                  </ul>
+                </td>
+                <td>
+                  <ul class="center-align" id="hEnergieaufwand"> 
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+
+  <table>
   <!-- Floating editing button triggering modal -->
   <div class="fixed-action-btn">
     <a onclick="document.getElementById('modal1').style.display='block'" class="btn-floating btn-large btn purple waves-effect waves-light modal-trigger"
@@ -420,7 +544,7 @@
                 Off
                 <input type="checkbox">
                 <span class="lever"></span>
-                Brutto
+                Vorsteuer
               </label>
             </div>
             <div class="switch">
@@ -428,13 +552,13 @@
                 Off
                 <input type="checkbox">
                 <span class="lever"></span>
-                Netto
+                Umsatzsteuer
               </label>
             </div>
           </div>
 
           <div class="input-field col s6">
-            <select disabled onchange="getSelectValue(this)">
+            <select disabled id="guv-select" name="guv-select" onchange="getSelectValue(this)">
               <optgroup label="GuV-Soll">
                 <option value="Lohnaufwand">Lohnaufwand</option>
                 <option value="Mietaufwand">Mietaufwand</option>
@@ -484,7 +608,7 @@
                     </ul>
               </div> -->
           <div class="col s12">
-            <p name="satz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati animi eum consectetur.</p>
+            <p name="satz">Geben Sie die relevanten Konten an (max. 2) und falls der Buchungssatz erfolgswirksam ist betätigen  Sie den Slider ob es sich um eine Vor- bzw. Umsatzsteuer handelt.</p>
           </div>
           <button class="btn purple" type="submit" value="Submit">Submit</button>
         </form>

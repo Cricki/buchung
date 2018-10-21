@@ -24,3 +24,22 @@ ToDO on 3.9.18
         4.1 Für Tabelle der ul einfach wenns get das value also den namen gleich machen also ul.id = "Fuhrpark"
             -> dann kann man durch den input value name gleich richtige id in tabelle finden
 _________________________________________________________________________________________________________________
+
+ToDO 19.10.18
+
+	1. GuV implementieren
+		
+		1.1. Front-end
+			new table beneath
+			in modal ansicht vor und umsatzsetuer
+			vorsteuer -> forderungen lul
+			umsatzsteuer in umsatzsteuer in GuV table 
+			Ausgleich geht GuV table in EK der Passiv seite
+
+	2. Ausgleich der Aktiv und Passiv seite
+
+
+ToDo 21.10.18
+
+	1. Disable GuV-Accounts list by default and just Enable them when "Vorsteuer" or "Umsatzsteuer" has been
+	selected.

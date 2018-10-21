@@ -100,6 +100,11 @@ function getValues(e){
 // will return the boolean value to decide if or which mathematic
 // operation must be done
 
+
+if (toggledBrutto == true || toggledNetto == true){
+	document.getElementById("guv-select").disabled = false;
+}
+
 function toggleBrutto(){
   if(toggledBrutto == false){
     toggledBrutto = true;
